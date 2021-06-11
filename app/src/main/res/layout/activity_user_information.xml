@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".UserInformationActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+            <TextView
+                android:id="@+id/ttl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/personal_details"
+                android:textColor="#C7575656"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_the_information_asked_below_to_continue"
+                android:layout_marginTop="15dp"
+                android:textColor="#C7575656"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/draw1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/enter_your_name_here"
+                android:textColor="#DA000000"
+                android:textColorHint="#B0000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields" />
+            <LinearLayout
+                android:id="@+id/ri1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_the_phone_number_here"
+                    android:inputType="phone"
+                    android:textColor="#DA000000"
+                    android:textColorHint="#B0000000"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/ri2"
+                android:layout_margin="6dp"
+                android:weightSum="2"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1.8"
+                    android:gravity="center_vertical"
+                    android:hint="ENTER THE EMail ADDRESS HERE"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#DA000000"
+                    android:textColorHint="#B0000000"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="15dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/draw2"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:typeface="sans"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

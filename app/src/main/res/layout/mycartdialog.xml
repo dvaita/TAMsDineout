@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="20dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/draw5"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/my_meal_today"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:typeface="sans" />
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circular"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/splash"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/l1"
+        android:orientation="vertical">
+    <ListView
+        android:id="@+id/listCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="NestedScrolling" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/l2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/total_items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/total_price"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <TextView
+            android:id="@+id/ttPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/l3">
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/draw5"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:text="@string/place_order" />
+        <Button
+            android:id="@+id/cancelOrder"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/draw3"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/placeOrder"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

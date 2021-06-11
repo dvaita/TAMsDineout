@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/splashttl"
+        tools:ignore="ContentDescription" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/select_the_preferable_time_of_your_dinner"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/sixclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_00pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+            <RadioButton
+                android:id="@+id/sixthirtyclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_30_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/sevenclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/_7_00_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="ObsoleteLayoutParam" />
+            <RadioButton
+                android:id="@+id/seventhirtyclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/_7_30_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="ObsoleteLayoutParam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/eightclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/_8_00_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="ObsoleteLayoutParam" />
+            <RadioButton
+                android:id="@+id/eightthirtyclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/_8_30_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="ObsoleteLayoutParam" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/nineclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_00_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <RadioButton
+                android:id="@+id/ninethirtyclock"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_30_pm"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+        </LinearLayout>
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="SELECT"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <ImageView-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:src=""/>-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="KOTHRUD"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:background="?android:attr/selectableItemBackground"/>-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

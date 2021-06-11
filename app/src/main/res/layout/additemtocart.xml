@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/splashttl"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/img1"
+        android:layout_margin="10dp"
+        android:background="@drawable/draw3"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/food_item_name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/drinks"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/regular"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/regular"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/priceSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/price_small"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/medium"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <TextView
+            android:id="@+id/priceMedium"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/price_medium"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/large"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/large"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        <TextView
+            android:id="@+id/priceLarge"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/price_large"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="0.7"
+                android:text="@string/quantity"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="ObsoleteLayoutParam,RelativeOverlap,RtlHardcoded" />
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/quantityB"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/draw3"
+                app:backGroundColor="#fff"
+                app:finalNumber="10"
+                app:initialNumber="1"
+                app:textColor="#000"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/total_rs"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+            <TextView
+                android:id="@+id/priceTotal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/price_total"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/addToMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/draw3"
+                android:padding="15dp"
+                android:text="@string/add_to_my_meal" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

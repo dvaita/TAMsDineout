@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/splashttl"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/ttl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="18dp"
+                android:text="@string/get_started"
+                android:textColor="#C7575656"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ttl1"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/enter_your_phone_no_here_to_receive_otp_to_verify_your_phone_number"
+                android:textColor="#C7575656" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:layout_margin="7dp"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                android:textColor="#000" />
+            <LinearLayout
+                android:id="@+id/ri1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mob"
+                android:layout_margin="6dp"
+                android:background="@drawable/draw1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="+91"
+                    android:textColor="#C52C2C2C"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_the_phone_number_here"
+                    android:inputType="phone"
+                    android:textColor="#DA000000"
+                    android:textColorHint="#B0000000"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ri1"
+                android:layout_margin="6dp"
+                android:background="@drawable/draw1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:hint="@string/enter_the_otp_here"
+                    android:inputType="numberPassword"
+                    android:textColor="#DA000000"
+                    android:textColorHint="#B0000000"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill" />
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btn_otp"
+                android:layout_below="@id/r3"
+                android:layout_margin="10dp"
+                android:background="@drawable/draw2"
+                android:text="@string/send_otp"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn_otp"
+                android:layout_margin="10dp"
+                android:background="@drawable/draw2"
+                android:text="@string/verify_otp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ri2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/r2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="right"
+                android:text="---------------------------------"
+                android:textColor="#B0000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="#B0000000"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="left"
+                android:text="---------------------------------"
+                android:textColor="#B0000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ri2"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_google"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/draw1" />
+
+            <RelativeLayout
+                android:id="@+id/ri3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn_google"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/drawfacebook"
+                android:gravity="center">
+
+               <com.facebook.login.widget.LoginButton
+                   android:id="@+id/btn_fb"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:layout_marginLeft="18dp"
+                   tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/ri3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/draw1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/logoemail"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+                <Button
+                    android:id="@+id/btn_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/img2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/continue_with_email"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/by_continuing_n_you_will_accept_our_terms_and_conditions"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

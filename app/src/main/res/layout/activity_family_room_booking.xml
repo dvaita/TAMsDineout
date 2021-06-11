@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".FamilyRoomBooking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/family_jam"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="ObsoleteLayoutParam" />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:text="DATE"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:text="TIME"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/r1"
+            android:layout_margin="2dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/rr1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            tools:ignore="DisableBaselineAlignment">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="DOOR THIS WAY"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/l11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/table1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/sixpng"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:id="@+id/tbl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:text="AVAILABLE"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/l12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/table2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/sixpng"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVAILABLE"
+                    android:id="@+id/tbl2"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rr2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                tools:ignore="DisableBaselineAlignment">
+                <RelativeLayout
+                    android:id="@+id/l13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/table3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:rotation="90"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/table4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/table5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rr3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                tools:ignore="DisableBaselineAlignment">
+                <RelativeLayout
+                    android:id="@+id/l16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/table6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:rotation="90"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/table7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/table8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/sixpng"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tbl8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="AVAILABLE"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

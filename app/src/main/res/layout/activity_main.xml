@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:ignore="UselessParent">
+
+      <RelativeLayout
+          android:id="@+id/r1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:src="@drawable/imgbackground4"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="170dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:background="@drawable/draw6">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/myCardView"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/circular"
+                   app:cardCornerRadius="50dp">
+                  <ImageView
+                      android:id="@+id/imgUser"
+                      android:layout_width="90dp"
+                      android:layout_height="80dp"
+                      android:layout_gravity="center"
+                      android:src="@drawable/profile"
+                      android:scaleType="centerCrop"
+                      tools:ignore="ContentDescription" />
+               </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+         </FrameLayout>
+      </RelativeLayout>
+
+      <LinearLayout
+          android:id="@+id/r3"
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:padding="10dp"
+          android:layout_below="@+id/r1">
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginLeft="8dp"
+             android:layout_toRightOf="@+id/myCardView"
+             tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/name_appear_here"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="@string/email_phone_appear_here"/>
+         </RelativeLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+            android:gravity="center_horizontal">
+
+         <Button
+             android:id="@+id/myActivity"
+             android:layout_width="110dp"
+             android:layout_height="35dp"
+             android:background="@drawable/draw4"
+             android:padding="8dp"
+             android:text="MY ACTIVITY"
+             android:textColor="#FFFFFF"
+             android:textSize="12sp"
+             tools:ignore="ButtonStyle,HardcodedText" />
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="110dp"
+             android:layout_height="35dp"
+             android:layout_marginLeft="16dp"
+             android:background="@drawable/draw7"
+             android:padding="8dp"
+             android:text="@string/signout"
+             android:textColor="#000"
+             android:textSize="12sp"
+             android:textStyle="bold"
+             tools:ignore="ButtonStyle,RtlHardcoded" />
+         </LinearLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/l5"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:layout_below="@+id/r3"
+          android:orientation="vertical"
+          android:layout_margin="5dp">
+
+      <RelativeLayout
+          android:id="@+id/r4"
+          android:layout_width="match_parent"
+          android:layout_height="170dp"
+          android:background="@drawable/whitee"
+          android:paddingBottom="25dp">
+         <RelativeLayout
+             android:id="@+id/ll1"
+             android:layout_width="match_parent"
+             android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/fieldName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="MEAL TO HOME"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <Button
+                android:id="@+id/btnMyOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/draw1"
+                android:text="@string/details"
+                android:textColor="#000"
+                tools:ignore="RelativeOverlap" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/ll1">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/circular"
+                android:padding="10dp"
+                android:src="@drawable/splash"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img3"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_margin="3dp"
+                tools:ignore="RtlHardcoded">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.5"
+                   android:orientation="horizontal"
+                   android:weightSum="1">
+
+                  <TextView
+                      android:layout_width="50dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginRight="12dp"
+                      android:layout_weight="0.3"
+                      android:gravity="center"
+                      android:text="@string/date"
+                      android:textSize="13sp"
+                      android:textStyle="bold"
+                      tools:ignore="NestedWeights" />
+                  <TextView
+                      android:id="@+id/getDate"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginRight="12dp"
+                      android:layout_weight="0.7"
+                      android:gravity="left|center_vertical"
+                      android:textSize="13sp"
+                      android:textStyle="bold"
+                      tools:ignore="NestedWeights" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.5"
+                   android:orientation="horizontal"
+                   android:weightSum="1">
+                  <TextView
+                      android:layout_width="50dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.3"
+                      android:text="@string/payment"
+                      android:gravity="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textSize="13sp"
+                      android:layout_marginRight="12dp"
+                      android:textStyle="bold"
+                      tools:ignore="NestedWeights" />
+                  <TextView
+                      android:id="@+id/getPrice"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginRight="12dp"
+                      android:layout_weight="0.7"
+                      android:gravity="left|center_vertical"
+                      android:textSize="13sp"
+                      android:textStyle="bold"
+                      tools:ignore="NestedWeights" />
+               </LinearLayout>
+            </LinearLayout>
+
+         </RelativeLayout>
+      </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:background="@drawable/white"
+             android:layout_marginTop="20dp"
+             android:id="@+id/r9">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_recent_activity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+         </RelativeLayout>
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/r5"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/white"
+          android:orientation="horizontal"
+          android:weightSum="2.5"
+          tools:ignore="DisableBaselineAlignment">
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+            android:layout_weight="0.5">
+            <Button
+             android:id="@+id/profile"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/profileb"
+             tools:ignore="ButtonStyle" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:layout_weight="0.5">
+
+         <Button
+             android:id="@+id/locate"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/locationg"
+             tools:ignore="ButtonStyle" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:layout_weight="0.5">
+
+         <Button
+             android:id="@+id/bookTable"
+             android:layout_width="50dp"
+             android:layout_height="45dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/booktablebg"
+             tools:ignore="ButtonStyle" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:layout_weight="0.5">
+            <Button
+             android:id="@+id/orders"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/orderbg"
+             tools:ignore="ButtonStyle" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:layout_weight="0.5">
+            <Button
+             android:id="@+id/menu"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/menubg"
+             tools:ignore="ButtonStyle" />
+         </RelativeLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/r6"
+          android:layout_width="match_parent"
+          android:layout_height="3dp"
+          android:layout_above="@+id/r5"
+          android:orientation="horizontal">
+         <ImageView
+             android:layout_width="10dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="0.5"
+             android:background="@color/colorPrimary"
+             tools:ignore="ContentDescription" />
+         <ImageView
+             android:layout_width="10dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="0.5"
+             tools:ignore="ContentDescription" />
+         <ImageView
+             android:layout_width="10dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="0.5"
+             tools:ignore="ContentDescription" />
+         <ImageView
+             android:layout_width="10dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="0.5"
+             tools:ignore="ContentDescription" />
+
+         <ImageView
+             android:layout_width="10dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="0.5"
+             tools:ignore="ContentDescription" />
+      </LinearLayout>
+
+
+   </RelativeLayout>
+
+</LinearLayout>
