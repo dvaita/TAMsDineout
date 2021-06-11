@@ -1,4 +1,4 @@
-# TAMsDineout
+# TAM's Dineout
 ## The way to Book your favourite Table.
 
 
